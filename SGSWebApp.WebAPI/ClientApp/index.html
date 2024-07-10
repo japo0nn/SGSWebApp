@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, JS</title>
+</head>
+<body>
+    <h2>Форма с зависимыми списками</h2>
+    
+    <form id="dataForm">
+        <label for="city">Город:</label>
+        <select id="city" name="city" onchange="workshopUpdate()">
+            <option value="">Выберите город</option>
+            <option value="Astana">Астана</option>
+            <option value="Almaty">Алматы</option>
+            <option value="Shymkent">Шымкент</option>
+            <option value="Taraz">Тараз</option>
+            <option value="Qyzylorda">Кызылорда</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="workshop">Цех:</label>
+        <select id="workshop" name="workshop" onchange="employeeUpdate()">
+            <option value="">Выберите цех</option>
+            <option value="Алматы цех 1">Алматы цех 1</option>
+            <option value="Алматы цех 2">Алматы цех 2</option>
+            <option value="Астана цех 1">Астана цех 1</option>
+            <option value="Астана цех 2">Астана цех 2</option>
+            <option value="Алматы цех 1">Шымкент цех 1</option>
+            <option value="Алматы цех 1">Шымкент цех 2</option>
+            <option value="Алматы цех 1">Тараз цех</option>
+            <option value="Алматы цех 1">Кызылорда цех</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="employee">Сотрудник:</label>
+        <select id="employee" name="employee">
+            <option value="">Выберите сотрудника</option>
+            <option value="Астана сотрудник 1">Астана сотрудник 1</option>
+            <option value="Астана сотрудник 2">Астана сотрудник 2</option>
+            <option value="Алматы сотрудник 1">Алматы сотрудник 1</option>
+            <option value="Алматы сотрудник 2">Алматы сотрудник 2</option>
+            <option value="Шымкент сотрудник 1">Шымкент сотрудник 1</option>
+            <option value="Шымкент сотрудник 2">Шымкент сотрудник 2</option>
+            <option value="Тараз сотрудник">Тараз сотрудник</option>
+            <option value="Кызылорда сотрудник">Кызылорда сотрудник</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="brigade">Бригада:</label>
+        <select id="brigade" name="brigade">
+            <option value="1">Бригада 1</option>
+            <option value="2">Бригада 2</option>
+            <option value="3">Бригада 3</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="shift">Смена:</label>
+        <select id="shift" name="shift">
+            <option value="Утренняя">Утренняя</option>
+            <option value="Дневная">Дневная</option>
+            <option value="Вечерняя">Вечерняя</option>
+        </select>
+        
+        <br><br>
+        
+        <button type="button" onclick="saveData()">Сохранить в Cookie</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
